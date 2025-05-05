@@ -1,10 +1,9 @@
 import React, { useState, useEffect,useRef} from 'react';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
-import construction from './images/construction.jpg';
 import city from './images/city.jpg';
 import './App.css';
-import Skills from './Skills.js';
-import WhatIDo from './WhatIDo.js';
+import Skills from './components/Skills.js/index.js';
+import WhatIDo from './components/WhatIDo.js/index.js';
 function App() {
   const pageref=useRef(null);
   return (
