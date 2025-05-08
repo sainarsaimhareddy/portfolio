@@ -2,8 +2,10 @@ import React, { useState, useEffect,useRef} from 'react';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import city from './images/city.jpg';
 import './App.css';
-import Skills from './components/Skills.js/index.js';
-import WhatIDo from './components/WhatIDo.js/index.js';
+import Skills from './components/Skills.js';
+import WhatIDo from './components/WhatIDo.js';
+import Projects from './components/Projects.js'
+import Contact from './components/Contact.js';
 function App() {
   const pageref=useRef(null);
   return (
@@ -29,13 +31,13 @@ function App() {
         </ul>
       </div>
 
-      <Parallax pages={5} ref={pageref}>
+      <Parallax pages={6.2} ref={pageref}>
         <ParallaxLayer offset={0} speed={0.2} sticky={{ start: 0, end: 1 }} style={{
           backgroundImage: `url(${city})`,
           backgroundSize: "cover",
           zIndex: -1,
           transition: "background-image 1s ease-in-out"
-        }} ><hr></hr></ParallaxLayer>
+        }} ></ParallaxLayer>
 
         <ParallaxLayer offset={0} speed={0.2} onClick={() => pageref.current.scrollTo(1)}>
           <div style={{ color: "black", textAlign: "center", position: "absolute", top: "40%", left: "50%", transform: "translate(-50%, -50%)" }}>
@@ -56,9 +58,24 @@ function App() {
         <ParallaxLayer offset={2} speed={0.4} factor={1.5} onClick={() => pageref.current.scrollTo(3)}>
             <WhatIDo pagereferance={pageref}/>
            </ParallaxLayer>
-           <ParallaxLayer offset={3} speed={0.2} onClick={() => pageref.current.scrollTo(0)}>
+           <ParallaxLayer offset={3} speed={0.2} onClick={() => pageref.current.scrollTo(4)}>
           <Skills />
          </ParallaxLayer>
+         <ParallaxLayer offset={4} speed={0.3} style={{ backgroundColor: "black" }} onClick={()=>pageref.current.scrollTo(5)}>
+          <Projects />
+         </ParallaxLayer>
+         <ParallaxLayer offset={5} speed={0.4} style={{
+  backgroundColor: "black",
+  zIndex:10,
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  flexDirection: "column",
+  color: "white"
+}}>
+  <Contact />
+</ParallaxLayer>
+
       </Parallax>
     </>
   );

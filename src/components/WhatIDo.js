@@ -1,8 +1,8 @@
 import react from "react";
 import { useRef } from "react";
 import './WhatIDo.css';
-import learning from "./images/learning.jpg";
-import blackcountry from "./images/blackcountry.jpg";
+import learning from "../images/learning.jpg";
+import blackcountry from "../images/blackcountry.jpg";
 export default function WhatIDo({pagereferance}) {
     return (
         <>
@@ -28,7 +28,7 @@ export default function WhatIDo({pagereferance}) {
   <button 
   onClick={(e) => {
     e.stopPropagation()
-    pagereferance.current.scrollTo(4)}
+    pagereferance.current.scrollTo(5)}
   }
   style={{
     marginTop: '2rem',

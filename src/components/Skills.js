@@ -1,11 +1,11 @@
 import React from "react";
-import city from "./images/city.jpg";
-import dsa from './images/dsa.jpg';
-import javascript from './images/javascript.jpg';
-import python from './images/python.jpg';
-import git from './images/git.jpg';
-import machinelearning from './images/machinelearning.jpg';
-import computervision from './images/computervision.jpg';
+import city from "../images/city.jpg";
+import dsa from '../images/dsa.jpg';
+import javascript from '../images/javascript.jpg';
+import python from '../images/python.jpg';
+import git from '../images/git.jpg';
+import machinelearning from '../images/machinelearning.jpg';
+import computervision from '../images/computervision.jpg';
 export default function Skills() {
     const skills = [
         { 
@@ -111,16 +111,17 @@ function SkillCard({ name, description, image ,stars}) {
                 />
             </div>
             <p style={{ color: 'white', fontWeight: 'bold' }}>{name}</p>
-            {isHovered && (
+            {isHovered && (<>
                 <p style={{ 
                     color: 'white', 
                     fontSize: '0.9rem',
                     animation: 'fadeIn 0.3s ease'
                 }}>
                     {description}
-                    <hr></hr>
-                    {stars}
                 </p>
+             <hr></hr>
+             <p style={{color:'white',fontSize:'0.7rem',animation:'fadeIn 0.3s ease'}}>Rating : {stars}</p>
+             </>
             )}
         </div>
     );
