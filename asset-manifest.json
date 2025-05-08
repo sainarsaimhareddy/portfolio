@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.1c12be31.css",
+    "main.js": "/Portfolio/static/js/main.e119c418.js",
+    "static/js/453.1407b060.chunk.js": "/Portfolio/static/js/453.1407b060.chunk.js",
+    "static/media/learning.jpg": "/Portfolio/static/media/learning.c4e9d8386ee085756acd.jpg",
+    "static/media/machinelearning.jpg": "/Portfolio/static/media/machinelearning.b8e29938853800f03004.jpg",
+    "static/media/computervision.jpg": "/Portfolio/static/media/computervision.d7f8c1b4181872728809.jpg",
+    "static/media/city.jpg": "/Portfolio/static/media/city.5bcc768ecd47dc2ce77b.jpg",
+    "static/media/blackcountry.jpg": "/Portfolio/static/media/blackcountry.47f8e9b42b5c0d2d8d5c.jpg",
+    "static/media/git.jpg": "/Portfolio/static/media/git.2103561d32b8f80bc44a.jpg",
+    "static/media/javascript.jpg": "/Portfolio/static/media/javascript.b31a4115fcdf597a65d2.jpg",
+    "static/media/python.jpg": "/Portfolio/static/media/python.e521fca108d0f6368b8a.jpg",
+    "static/media/dsa.jpg": "/Portfolio/static/media/dsa.105c84de54830e1a643b.jpg",
+    "static/media/instagram.png": "/Portfolio/static/media/instagram.e719d8b29f452a16302d.png",
+    "index.html": "/Portfolio/index.html",
+    "main.1c12be31.css.map": "/Portfolio/static/css/main.1c12be31.css.map",
+    "main.e119c418.js.map": "/Portfolio/static/js/main.e119c418.js.map",
+    "453.1407b060.chunk.js.map": "/Portfolio/static/js/453.1407b060.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1c12be31.css",
+    "static/js/main.e119c418.js"
+  ]
+}
