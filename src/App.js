@@ -46,7 +46,9 @@ function App() {
 
   const scrollToSection = (section) => {
     setCurrentSection(section);
-    pageref.current.scrollTo(section);
+    if (pageref.current) {
+      pageref.current.scrollTo(section);
+    }
   };
 
   return (
